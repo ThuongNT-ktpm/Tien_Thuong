@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Garamond", sans-serif;
+}
+header {
+  font-family: var(--font-main);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: rgb(5, 5, 65);
+  color: white;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  list-style: none;
+  margin-top: -10px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li .q {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 17px;
+  padding: 10px 25px;
+}
+nav ul li .q:hover {
+  color: red;
+  font-weight: bold;
+}
+main {
+  font-family: var(--font-main);
+  margin-top: -200px;
+  padding: 300px;
+}
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.first-text {
+  flex: 1;
+}
+.first-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.first-text .f1 {
+  font-size: 23px;
+  padding: 10px;
+}
+.first-text .f2 {
+  font-size: 25px;
+}
+.first-text .f2 ul li .w {
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 5px 24px;
+  background-color: #007bff;
+  border-radius: 10px;
+  color: white;
+}
+.first-text .f2 ul li .w:hover {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Welcome {
+  font-size: 50px;
+}
+.f1 {
+  font-size: 30px;
+}
+.first-avatar {
+  flex-shrink: 0;
+}
+.first-avatar img {
+  width: 250px; /* Chiều rộng ảnh avatar là 250px */
+  height: 250px; /* Chiều cao ảnh avatar là 250px */
+  object-fit: cover; /* Ảnh được căn chỉnh sao cho đầy khung, không méo hình */
+  border-radius: 50%; /* Làm tròn ảnh thành hình tròn hoàn hảo */
+  box-shadow: 0 5px 25px rgb(9, 150, 215); /* Đổ bóng nhẹ tạo hiệu ứng nổi 3D */
+  transition: transform 0.3s ease; /*Tạo hiệu ứng mượt khi biến đổi*/
+}
+.first-avatar img:hover {
+  transform: scale(1.1); /* Phóng to lên 110% khi rê chuột */
+}
+.introduce h1 {
+  font-size: 35px;
+  padding: 15px;
+}
+.introduce p {
+  font-size: 20px;
+}
+.Skills {
+  text-align: center;
+  padding: 60px 20px;
+}
+.Skills h1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  font-family: var(--font-main);
+}
+.skills-grid {
+  display: grid; /* Dùng CSS Grid để tạo bố cục dạng lưới */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  ); /* Tự động lặp cột với min-width là 160px, tối đa 1fr (phần bằng nhau) */
+  gap: 30px; /* Khoảng cách giữa các thẻ kỹ năng */
+  max-width: 1000px; /* Chiều rộng tối đa cho toàn lưới */
+  margin: 0 auto; /* Căn giữa toàn bộ lưới */
+}
+.skill-card {
+  background: white; /* Nền trắng cho mỗi khung kỹ năng */
+  padding: 30px 20px; /* Khoảng trống trong khung */
+  border-radius: 16px; /* Bo góc khung tròn nhẹ */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Đổ bóng nhẹ tạo chiều sâu */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+.skill-card {
+  background: white; /* Nền trắng cho mỗi khung kỹ năng */
+  padding: 30px 20px; /* Khoảng trống trong khung */
+  border-radius: 16px; /* Bo góc khung tròn nhẹ */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Đổ bóng nhẹ tạo chiều sâu */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Hiệu ứng mượt khi hover */
+}
+.skill-card:hover {
+  transform: translateY(-5px); /* Khi hover, thẻ nổi lên 5px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Tăng độ bóng khi hover */
+}
+.skill-card img {
+  height: 60px; /* Chiều cao icon kỹ năng */
+  object-fit: contain; /* Đảm bảo hình ảnh không bị méo, vừa khung */
+  margin-bottom: 15px; /* Cách icon với tên phía dưới */
+}
+.skill-card p {
+  font-size: 16px; /* Kích cỡ chữ cho tên kỹ năng */
+  font-weight: 500; /* Chữ hơi đậm, nổi bật */
+  margin: 0; /* Xóa khoảng trắng mặc định */
+}
+
+.Experience {
+  font-size: 20px;
+  padding: 60px 20px;
+}
+.Experience h1 {
+  padding: 10px;
+}
+.Experience h1 p {
+  padding: 10px;
+}
+
+.Projects-h1 {
+  font-size: 30px;
+  padding: 10px 31px;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 40px;
+}
+.project-card {
+  margin-top: 50px;
+  background: white;
+  width: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px); /* Hover thì nổi lên nhẹ */
+}
+.project-image img {
+  width: 100%; /* Chiếm full chiều ngang */
+  height: 180px; /* Chiều cao cố định */
+  object-fit: cover; /* Cắt ảnh cho vừa khung, không méo */
+}
+.project-content {
+  padding: 20px; /* Khoảng cách nội dung với viền */
+  text-align: left; /* Căn trái cho nội dung */
+}
+.project-content h3 {
+  margin-bottom: 10px; /* Cách dưới một đoạn */
+  font-size: 20px; /* Cỡ chữ tiêu đề */
+}
+.project-content p {
+  font-size: 14px; /* Cỡ chữ mô tả */
+  color: #444; /* Màu xám đậm */
+  margin-bottom: 10px; /* Cách dưới */
+}
+.project-content ul {
+  padding-left: 0; /* Bỏ padding trái mặc định */
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.project-content li {
+  margin-bottom: 6px; /* Cách từng dòng thông tin ra */
+}
+.btn-view {
+  display: inline-block; /* Nút là khối inline */
+  background-color: #d94d58; /* Màu nền đỏ hồng */
+  color: white; /* Màu chữ trắng */
+  padding: 10px 20px; /* Kích thước nút */
+  border-radius: 6px; /* Bo tròn nhẹ */
+  text-decoration: none; /* Bỏ gạch dưới */
+  transition: background-color 0.3s ease; /* Hover mượt */
+}
+.btn-view:hover {
+  background-color: #b93c45; /* Hover chuyển màu đậm hơn */
+}
+footer {
+  background-color: #007bff;
+}
