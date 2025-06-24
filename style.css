@@ -43,7 +43,7 @@ nav ul li .q:hover {
 main {
   font-family: var(--font-main);
   margin-top: -200px;
-  padding: 300px;
+  padding: 250px;
 }
 .first {
   display: flex;
@@ -52,6 +52,7 @@ main {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+  gap: 50px;
 }
 .first-text {
   flex: 1;
@@ -65,19 +66,19 @@ main {
   padding: 10px;
 }
 .first-text .f2 {
-  font-size: 25px;
+  font-size: 18px;
 }
 .first-text .f2 ul li .w {
   text-decoration: none;
   justify-content: space-around;
-  padding: 5px 24px;
+  padding: 0px 5px;
   background-color: #007bff;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
 }
 .first-text .f2 ul li .w:hover {
   color: red;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 .Welcome {
@@ -230,5 +231,18 @@ main {
   background-color: #b93c45; /* Hover chuyển màu đậm hơn */
 }
 footer {
-  background-color: #007bff;
+  background-color: #247fe8;
+  font-size: 17px;
+  top: 0;
+  left: 0;
+}
+
+footer .footer-p {
+  display: flex;
+  justify-content: center;
+}
+.img-a {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
