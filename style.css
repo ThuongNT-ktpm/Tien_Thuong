@@ -8,54 +8,65 @@
 }
 header {
   font-family: var(--font-main);
-
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 50px;
+
   position: fixed;
   background-color: rgb(5, 5, 65);
   color: white;
-  font-size: 40px;
+
   top: 0;
   left: 0;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 5px 30px;
+  font-size: 32px;
 }
+
 nav ul {
   list-style: none;
-  margin-top: -10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 nav ul li {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 nav ul li .q {
+  padding: 0px 25px;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  display: inline-block;
   font-size: 17px;
-  padding: 10px 25px;
 }
+
 nav ul li .q:hover {
   color: red;
   font-weight: bold;
 }
+
 main {
   font-family: var(--font-main);
-  margin-top: -200px;
-  padding: 250px;
+  padding: 120px 20px 60px;
 }
 .first {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  gap: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .first-text {
-  flex: 1;
+  flex: 1 1 300px;
 }
 .first-text h1 {
   font-size: 40px;
@@ -91,15 +102,15 @@ main {
   flex-shrink: 0;
 }
 .first-avatar img {
-  width: 250px; /* Chiều rộng ảnh avatar là 250px */
-  height: 250px; /* Chiều cao ảnh avatar là 250px */
-  object-fit: cover; /* Ảnh được căn chỉnh sao cho đầy khung, không méo hình */
-  border-radius: 50%; /* Làm tròn ảnh thành hình tròn hoàn hảo */
-  box-shadow: 0 5px 25px rgb(9, 150, 215); /* Đổ bóng nhẹ tạo hiệu ứng nổi 3D */
-  transition: transform 0.3s ease; /*Tạo hiệu ứng mượt khi biến đổi*/
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 25px rgb(9, 150, 215);
+  transition: transform 0.3s ease;
 }
 .first-avatar img:hover {
-  transform: scale(1.1); /* Phóng to lên 110% khi rê chuột */
+  transform: scale(1.1);
 }
 .introduce h1 {
   font-size: 35px;
@@ -118,43 +129,39 @@ main {
   font-family: var(--font-main);
 }
 .skills-grid {
-  display: grid; /* Dùng CSS Grid để tạo bố cục dạng lưới */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(160px, 1fr)
-  ); /* Tự động lặp cột với min-width là 160px, tối đa 1fr (phần bằng nhau) */
-  gap: 30px; /* Khoảng cách giữa các thẻ kỹ năng */
-  max-width: 1000px; /* Chiều rộng tối đa cho toàn lưới */
-  margin: 0 auto; /* Căn giữa toàn bộ lưới */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .skill-card {
-  background: white; /* Nền trắng cho mỗi khung kỹ năng */
-  padding: 30px 20px; /* Khoảng trống trong khung */
-  border-radius: 16px; /* Bo góc khung tròn nhẹ */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Đổ bóng nhẹ tạo chiều sâu */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt khi hover */
-}
-.skill-card {
-  background: white; /* Nền trắng cho mỗi khung kỹ năng */
-  padding: 30px 20px; /* Khoảng trống trong khung */
-  border-radius: 16px; /* Bo góc khung tròn nhẹ */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Đổ bóng nhẹ tạo chiều sâu */
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Hiệu ứng mượt khi hover */
+}
+.skill-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skill-card:hover {
-  transform: translateY(-5px); /* Khi hover, thẻ nổi lên 5px */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Tăng độ bóng khi hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .skill-card img {
-  height: 60px; /* Chiều cao icon kỹ năng */
-  object-fit: contain; /* Đảm bảo hình ảnh không bị méo, vừa khung */
-  margin-bottom: 15px; /* Cách icon với tên phía dưới */
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 .skill-card p {
-  font-size: 16px; /* Kích cỡ chữ cho tên kỹ năng */
-  font-weight: 500; /* Chữ hơi đậm, nổi bật */
-  margin: 0; /* Xóa khoảng trắng mặc định */
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .Experience {
@@ -173,11 +180,12 @@ main {
   padding: 10px 31px;
 }
 .project-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   flex-wrap: wrap;
   gap: 30px;
-
-  margin-top: 40px;
+  justify-content: center;
+  padding: 20px;
 }
 .project-card {
   margin-top: 50px;
@@ -189,46 +197,46 @@ main {
   transition: transform 0.3s ease;
 }
 .project-card:hover {
-  transform: translateY(-5px); /* Hover thì nổi lên nhẹ */
+  transform: translateY(-5px);
 }
 .project-image img {
-  width: 100%; /* Chiếm full chiều ngang */
-  height: 180px; /* Chiều cao cố định */
-  object-fit: cover; /* Cắt ảnh cho vừa khung, không méo */
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 .project-content {
-  padding: 20px; /* Khoảng cách nội dung với viền */
-  text-align: left; /* Căn trái cho nội dung */
+  padding: 20px;
+  text-align: left;
 }
 .project-content h3 {
-  margin-bottom: 10px; /* Cách dưới một đoạn */
-  font-size: 20px; /* Cỡ chữ tiêu đề */
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 .project-content p {
-  font-size: 14px; /* Cỡ chữ mô tả */
-  color: #444; /* Màu xám đậm */
-  margin-bottom: 10px; /* Cách dưới */
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
 }
 .project-content ul {
-  padding-left: 0; /* Bỏ padding trái mặc định */
-  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  padding-left: 0;
+  list-style: none;
   font-size: 14px;
   margin-bottom: 15px;
 }
 .project-content li {
-  margin-bottom: 6px; /* Cách từng dòng thông tin ra */
+  margin-bottom: 6px;
 }
 .btn-view {
-  display: inline-block; /* Nút là khối inline */
-  background-color: #d94d58; /* Màu nền đỏ hồng */
-  color: white; /* Màu chữ trắng */
-  padding: 10px 20px; /* Kích thước nút */
-  border-radius: 6px; /* Bo tròn nhẹ */
-  text-decoration: none; /* Bỏ gạch dưới */
-  transition: background-color 0.3s ease; /* Hover mượt */
+  display: inline-block;
+  background-color: #d94d58;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 .btn-view:hover {
-  background-color: #b93c45; /* Hover chuyển màu đậm hơn */
+  background-color: #b93c45;
 }
 footer {
   background-color: #247fe8;
@@ -248,4 +256,21 @@ footer .footer-p {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .Welcome {
+    font-size: 32px;
+  }
+  .f1 {
+    font-size: 20px;
+  }
+  .first-avatar img {
+    width: 180px;
+    height: 180px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
