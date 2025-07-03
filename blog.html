@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My Blog Thuong</title>
   </head>
   <body>
@@ -17,7 +18,140 @@
       </nav>
     </header>
     <main>
-      <h1>My Blog Thuong</h1>
+      <h1>Welcome, A place to share university experiences</h1>
     </main>
+<section class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/sss.png"
+              alt="So cute"
+             
+            />
+          </div>
+          <div class="project-content">
+            <p><strong>OSG202</strong></p>
+            <ul>
+              <li><strong>👤 Subject:</strong> Operating System</li>
+              <li><strong>🛠 Content:</strong> Tỉ lệ trúng 80%</li>
+              <li>
+                <strong>🎯 Source:</strong> Đề thi kì trước và quizlet
+              </li>
+            </ul>
+            <a
+              href="https://thuongnt-ktpm.github.io/Demo_hop_qua/"
+              class="btn-view"
+              >Xem thêm</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/sss.png" alt="So cute" width="300" height="200" />
+          </div>
+          <div class="project-content">
+            <p><strong>NWC204</strong></p>
+            <ul>
+              <li><strong>👤 Subject:</strong> Computer Networking</li>
+              <li><strong>🛠 Content:</strong> Tỉ lệ trúng 100% Thầy Quy bảo trường lấy đề trong đây</li>
+              <li><strong>🎯 Source:</strong> IT Exam Answers</li>
+            </ul>
+            <a
+              href="https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
+              class="btn-view"
+              >Xem thêm</a
+            >
+          </div>
+           </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/sss.png" alt="So cute" width="300" height="200" />
+            </div>
+            <div class="project-content">
+              <p><strong>PRO192</strong></p>
+              <ul>
+                <li><strong>👤 Subject:</strong> Object-Oriented Programming</li>
+                <li><strong>🛠 Content:</strong> Tỉ lệ trúng 80%</li>
+                <li><strong>🎯 Source:</strong> Đề PE và FE các kì trước</li>
+              </ul>
+              <a
+                href="https://thuongnt-ktpm.github.io/H-i-ngh-/"
+                class="btn-view"
+                >Xem thêm</a
+              >
+            </div>
+          </div>
+            <div class="project-card">
+            <div class="project-image">
+              <img src="images/sss.png" alt="So cute" width="300" height="200" />
+            </div>
+            <div class="project-content">
+              <p><strong>WED201</strong></p>
+              <ul>
+                <li><strong>👤 Subject:</strong> Web design</li>
+                <li><strong>🛠 Content:</strong> Tỉ lệ trúng 80%</li>
+                <li><strong>🎯 Source:</strong> Đề PE và FE các kì trước</li>
+              </ul>
+              <a
+                href="https://thuongnt-ktpm.github.io/H-i-ngh-/"
+                class="btn-view"
+                >Xem thêm</a
+              >
+            </div>
+          </div>
+             <div class="project-card">
+            <div class="project-image">
+              <img src="images/sss.png" alt="So cute" width="300" height="200" />
+            </div>
+            <div class="project-content">
+              <p><strong>MAD101</strong></p>
+              <ul>
+                <li><strong>👤 Subject:</strong> Discrete mathematics</li>
+                <li><strong>🛠 Content:</strong> Có video record cần inbox </li>
+                <li><strong>🎯 Source:</strong> Đề thi kì trước</li>
+              </ul>
+              <a
+                href="https://thuongnt-ktpm.github.io/H-i-ngh-/"
+                class="btn-view"
+                >Xem thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer>
+      <p class="footer-p">Copyright &copy; 2025 by Nguyen Tien Thuong</p>
+      <div class="img-a">
+        <a href="https://www.facebook.com/tien.thuong.674774" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg"
+            width="25"
+          />
+        </a>
+        <a href="https://github.com/ThuongNT-ktpm" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+            width="25"
+          />
+        </a>
+      </div>
+    </footer>
+    <script>
+  const leafEmoji = "🍁"; 
+
+  for (let i = 0; i < 30; i++) {
+    const leaf = document.createElement("div");
+    leaf.className = "leaf";
+    leaf.textContent = leafEmoji;
+
+    // Random vị trí và style
+    leaf.style.left = Math.random() * window.innerWidth + "px";
+    leaf.style.fontSize = 20 + Math.random() * 30 + "px";
+    leaf.style.animationDuration = 5 + Math.random() * 10 + "s";
+    leaf.style.animationDelay = Math.random() * 5 + "s";
+
+    document.body.appendChild(leaf);
+  }
+</script>
   </body>
 </html>
